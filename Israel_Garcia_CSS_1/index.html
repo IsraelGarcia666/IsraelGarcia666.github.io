@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Metal LIbrary Infierno 666 - Job Application</title>
+    <meta name="author" content="israel Garcia">
+    <style>
+        body {font-family: Engravers MT, sans-serif; margin: 20px; padding: 0px; background-color: #121212;
+            color: #f1de06;}
+        header, footer {background-color: #1f1f1f; padding: 10px; text-align: center;}
+        nav a {margin: 0 10px; color: #f41b07; text-decoration: none;}
+        section {margin-top: 20px;}
+        .form-section {background-color: #221515; padding: 15px; border: 1px solid #f41b07}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+
+    <!-- This style override only runs if JavaScript is disabled -->
+    <noscript>
+        <style>
+            #error-fallback-message {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <!-- END OF ERROR CODE, IF -->
+</head>
+<body>
+
+<!-- Visibility, HIDDEN ELEMENT -->
+
+<div id="error-fallback-message">
+    Welcome to hell!
+    <br>
+    <a href="index.html">Go Home</a>
+</div>
+
+<header>
+    <h1 class="title">Metal Library Infierno 666</h1>
+    <nav>
+        <a href="#application">Job Application</a>
+        <a href="#quote">Quote</a>
+        <a href="#media">Infierno Media</a>
+    </nav>
+</header>
+
+<main>
+    <section id="application" class="form-section">
+        <h2>Metal Musicologist Application</h2>
+        <article>
+           <!-- Job Application Form -->
+           <form action="/submit" method="POST" autocomplete="on">
+              <label>Full Name:
+                  <input type="text" name="fullname" placeholder="Metal Wizard" required minlength="1" maxlength="50">
+              </label><br><br>
+
+              <label>Email:
+                  <input type="email" name="email" placeholder="you@metalwizard.infierno666.hell" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+              </label><br><br>
+
+              <label>Password:
+                  <input type="password" name="password" required minlength="8" maxlength="20">
+              </label><br><br>
+
+              <label>Years of Experience:
+                  <input type="number" name="experience" min="0" max="666">
+              </label><br><br>
+
+              <label>Expected Salary Range:</label>
+                 <input type="range" id="salaryRange" min="666" max="1000000" step="100" value="666" 
+                 oninput="salaryOutput.value=salaryRange.value">
+                 <output name="salaryOutput">666</output>
+                <br><br>
+              
+
+              <label>Job Preferences:</label><br>
+              <input type="checkbox" name="preference" value="remote"> Remote Work<br>
+              <input type="checkbox" name="preference" value="onsite"> On Site<br>
+              <input type="checkbox" name="preference" value="parttime"> Part-Time<br><br>
+
+              <label>Job type:</label><br>
+              <input type="radio" name="jobtype" value="director"> Director<br>
+              <input type="radio" name="jobtype" value="hr"> HR<br>
+              <input type="radio" name="jobtype" value="wizardassistant"> Wizard Assistant<br>
+              <input type="radio" name="jobtype" value="intern"> Internship<br><br>
+
+              <label>Deparment:
+                  <select name="department">
+                      <option value="it" >Information Technology</option>
+                      <option value="cd" >Collection Development</option>
+                      <option value="op" >Outreach and Programming</option>
+                      <option value="ps" >Public Services</option>
+                      <option value="admin" >Administration</option>
+                  </select>
+              </label><br><br>
+
+              <label>Campus Preference:
+                  <input list="campuses" name="campus">
+                  <datalist id="campuses">
+                      <option value="Pandemora">
+                      <option value="Ashveil">
+                      <option value="Lustra">
+                      <option value="Grimharrow">
+                      <option value="Virexis">
+                      </option>
+                  </datalist>
+              </label><br><br>
+
+              <label>Motivation Letter:<br>
+                  <textarea name="coverletter" rows="6" cols="66" placeholder="why would you like to work with us?">
+                  </textarea>
+              </label><br><br>
+
+              <label>Referal Code (disable):
+                  <input type="text" value="helllibrary" disabled>
+              </label><br><br>
+
+              <label>Application ID (readonly):
+                  <input type="text" value="library666" readonly>
+              </label><br><br> 
+            
+              <input type="submit" value="Send Application" aria-label="Submit Job Application">
+          </form>
+          <!-- End of Job Application Form -->
+        </article>
+    </section>
+      
+    
+    <aside>
+    <link rel="stylesheet" href="style.css">
+        <blockquote id="quote">
+            “Abandon silence, all ye who enter here — for where words perish, music screams.”—<br>
+            Inspired by Inferno, Canto III, Dante Alighieri.
+        </blockquote>
+    </aside>
+
+    <section id="media">
+        <h2>Infierno Media</h2>
+        <article>
+                <!--Figure with Image and Caption-->
+                <figure>
+                    <img src="Metal_library_logo.png" alt="Metal Library logo" width="500" height="400">
+                    <figcaption>Metal Library Infierno 666 - A sanctuary for metal enthusiasts.</figcaption>
+                </figure><br>
+
+            <h3>Our Partners:</h3>
+
+                <!--Embed External Media-->
+              <embed src="https://www.themetalmag.com/category/read-each-issue-for-free-on-the-site-and-keep-history-in-your-collection/.pdf" 
+              type="application/pdf" width="560" height="315"><br>
+                <p>Explore the ultimate metal music database at The Metal Mag.</p>  
+              <iframe width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/fnL7RayhPVk?si=TSJ31qgFl2no7bxh" 
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen></iframe>
+                
+                <p>Metal-Evolution, The history of metal.</p>
+
+        <div class="source-links">
+            <h4>Other Sources</h4>
+                <!--Media Links-->
+                <p>
+                    <a href="https://www.metal-archives.com/" target="_blank">Metal-Archives</a> |
+                    <a href="https://www.themetalverse.net/the-best-metal-blogs-in-2024/" target="_blank">Metalverse</a> |
+                    <a href="https://www.metal-archives.com/artists/Israel_Real/53762y" target="_blank">CEO</a>
+                </p>
+        </div>     
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Metal Library Infierno 666. All rights reserved.</p>
+</footer>
+</body>  
+</html>
