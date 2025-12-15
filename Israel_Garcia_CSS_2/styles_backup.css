@@ -1,0 +1,398 @@
+
+/* =============================
+   Global Reset & Base
+   ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stack-sans-notch {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body { min-height: 100%; }
+
+body {
+  font-family: 'Stack Sans Notch', sans-serif;
+  color: #f8edd8;
+  background-color: #090808; /* fallback */
+  display: flex;
+  flex-direction: column;
+}
+
+main { flex: 1; display: flex; align-items: center; justify-content: center; }
+
+/* Fluid container to control max width on large screens */
+main,
+.container {
+  width: min(900px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+/* =============================
+   Backgrounds (shared + per page)
+   Mobile-first: attachment scroll; Desktop: fixed
+   ============================= */
+body,
+body.home,
+body.about,
+body.gallery,
+body.contact {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; /* mobile-first */
+}
+
+/* Page-specific images */
+/* Default body uses the same as home for consistency with previous file */
+body         { background-image: url("puerta-verde.jpg"); }
+body.home    { background-image: url("puerta-verde.jpg"); }
+body.about   { background-image: url("flame-1363095_Logo.png"); }
+body.gallery { background-image: url("israel-palacio-unsplash_Logo.png"); }
+body.contact { background-image: url("Guille-concert2_Logo.png"); }
+
+/* =============================
+   Typography
+   ============================= */
+h1, h2, h3, h5, h6, nav a {
+  color: #f4f4f1;
+  text-align: center;
+}
+
+/* Scaled heading sizes */
+h1 { font-size: clamp(1.6rem, 4.8vw, 3rem); }
+h3 { font-size: clamp(1rem, 3.2vw, 1.35rem); }
+
+/* Box-styled headings */
+h1 {
+  background-color: #000206;
+  border: 1px solid #000305;
+  padding: 24px; /* mobile-first; larger on tablet/desktop */
+  margin-bottom: 0;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+h3 {
+  background-color: #000206;
+  border: 1px solid #000305;
+  padding: 10px 20px;
+  margin-top: 24px; /* mobile-first; larger on tablet/desktop */
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+p {
+  font-size: clamp(0.98rem, 2.4vw, 1.06rem);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.home-article h3 {
+  color: #ff1900;
+  text-align: center;
+  border-bottom: 6px solid #03590a;
+  padding-bottom: 10px;
+}
+
+.text-box p {
+  line-height: 2.0;
+  text-align: justify;
+  background-color: #070707;
+  opacity: 0.7;
+  padding: 20px;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.about-article {
+  color: #f5d60d;
+  text-align: center;
+  border-bottom: 6px solid #03590a;
+  padding-bottom: 10px;
+}
+
+.text-content p {
+  line-height: 2.0;
+  text-align: center;
+  background-color: #070707;
+  opacity: 0.8;
+  padding: 20px;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.text-ulist ul {
+  line-height: 2.0;
+  text-align: justify;
+  background-color: #070707;
+  opacity: 0.8;
+  padding: 20px;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+h4 {
+  color: #0bef07 !important;
+  text-align: left;
+  border-bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+/* =============================
+   Layout & Images
+   ============================= */
+.main-layout-wrapper {
+  display: flex;
+  flex-direction: column; /* stacked by default */
+  gap: 30px;
+  margin-top: 40px;
+  align-items: stretch; /* full width blocks on mobile */
+  flex-wrap: nowrap;
+}
+
+.left-image-container {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden; /* prevents zoom spill */
+}
+
+.right-content-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+/* Image sizing */
+.left-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  opacity: 0.8;
+  transition: transform 280ms ease, filter 280ms ease;
+  transform-origin: center center;
+  cursor: zoom-in;
+}
+
+.left-image-container img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.4);
+}
+
+/* =============================
+   Cards & Fullscreen visuals
+   ============================= */
+.fs-card {
+  padding: 0;
+  margin: 0;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  background: transparent;
+  overflow: hidden;
+  display: inline-block;
+  cursor: zoom-in;
+}
+
+.fs-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 280ms ease;
+}
+
+.fs-card:hover img { transform: scale(1.06); }
+
+
+.fs-card:fullscreen {
+  border: none;
+  border-radius: 0;
+}
+
+.fs-card:fullscreen img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* or 'cover' */
+  cursor: zoom-out;
+  background: rgba(0,0,0,.85);
+}
+
+/* =============================
+   Navigation
+   ============================= */
+nav {
+  background-color: rgba(0, 2, 6, 0.75);
+  border: 1px solid #000305;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  opacity: 0.7;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+nav a:link    { color: #f5c812; text-decoration: none; }
+nav a:visited { color: #33fa01; }
+nav a:hover   { color: #1708f0; text-decoration: underline; }
+nav a:active  { color: #ff0000; }
+
+/* Optional separate background <img> element behind content */
+.background-image {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* =============================
+   Error fallback (kept)
+   ============================= */
+#error-fallback-message {
+  display: none;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid red;
+  background-color: black;
+}
+
+
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  body.gallery .float-card {
+    float: none;
+    width: 100%;
+    margin: 0 0 1px 0;
+  }
+}
+
+
+/* =============================
+   Breakpoints (mobile-first)
+   ============================= */
+
+/* Tablet (≥ 720px) */
+@media (min-width: 720px) {
+  /* Increase heading paddings on larger screens */
+  h1 { padding: 40px; }
+  h3 { margin-top: 40px; }
+
+  /* Two-column main layout */
+  .main-layout-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* Gallery grid behavior */
+  .demo-step1 {
+    grid-template-columns: 1fr 1fr; /* two columns */
+    align-items: start;
+    max-width: 1200px;
+  }
+
+  .demo-step1 .subtitle {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  /* YT embed height adjustment */
+  .demo-step1 .yt-embed iframe { height: 280px; }
+
+  /* Card width for tablet */
+  :root { --card-w: 340px; }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  /* Background fixed only on desktop */
+  body,
+  body.home,
+  body.about,
+  body.gallery,
+  body.contact {
+    background-attachment: fixed;
+  }
+
+  /* Final card width */
+  :root { --card-w: 360px; }
+
+  
+/* Home page desktop tweaks — keep structure intact */
+@media (min-width: 1024px) {
+  /* Give the home container a bit more breathing room if needed */
+  body.home main,
+  body.home .container {
+    width: min(1100px, 100% - 2rem);
+  }
+
+  /* Constrain the left image column so it doesn't dominate */
+  body.home .main-layout-wrapper {
+    align-items: flex-start; /* ensure columns align from the top */
+    gap: 32px;               /* a touch more spacing */
+  }
+
+  body.home .left-image-container {
+    flex: 0 0 520px;         /* fixed column width on desktop */
+    max-width: 520px;
+  }
+
+  /* Let the right column breathe and cap the text width for readability */
+  body.home .right-content-stack {
+    flex: 1 1 auto;          /* take remaining space */
+    max-width: 620px;        /* prevent overly narrow text */
+  }
+
+  /* Cap the paragraph box width to a readable measure */
+  body.home .text-box p {
+    max-width: 62ch;         /* ~62 characters per line is very readable */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+}
+
+/* Micro tweaks for very small screens (≤ 420px) */
+@media (max-width: 420px) {
+  html, body { overflow-x: hidden; }
+  .container, main { width: min(100% - 1rem, 900px); }
+  nav { gap: 0.5rem; }
+}
