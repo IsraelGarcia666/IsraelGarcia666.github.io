@@ -1,0 +1,355 @@
+/* =========================
+   GLOBAL / DARK THEME
+   ========================= */
+
+:root {
+  --bg-color: #0f1115;
+  --card-bg: rgba(22, 26, 32, 0.78); /* semi-transparent card */
+  --text-color: #e8ecf1;
+  --muted-text: #b6bcc6;
+  --primary-color: #1528fc;
+  --border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Page background */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: url("portfolio-wallpaper2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.custom-navbar {
+  background: rgba(10, 14, 20, 0.9);
+  backdrop-filter: blur(6px);
+}
+
+/*Israel G. */
+.navbar-brand {
+  font-weight: 600;
+  color: #05b30b !important;
+}
+
+.nav-link {
+  color: #dbe2ea !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Language buttons */
+.navbar .btn {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.navbar .btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================
+   SECTION CARDS
+   ========================= */
+
+.section-card {
+  background-color: var(--card-bg);
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+/* Skill logos */
+.skill-logo {
+  height: 76px;
+  width: auto;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.skill-logo:hover {
+  transform: scale(1.7);
+  opacity: 1;
+}
+
+#skills .card {
+  background-color: rgba(22, 26, 32, 0.65);
+  color: #222426;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Dark progress bar background */
+.progress {
+  background-color: rgba(255, 255, 255, 0.456); /* soft dark grey */
+  height: 0.8rem;
+}
+
+.progress-bar {
+  background-color: #0d6efd; /* keep Bootstrap blue */
+}
+
+/* Dark themed skills note (override Bootstrap alert) */
+#skills .alert-secondary {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+  border: none;
+  border-left: 4px solid #0d6efd;
+}
+
+/* Testimonial avatars */
+.testimonial-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  opacity: 0.9;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+/* Hover effect for testimonial avatars */
+
+.testimonial-avatar:hover {
+  transform: scale(1.40);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Carousel controls for testimonials */
+ #testimonialsCarousel .carousel-control-prev,
+#testimonialsCarousel .carousel-control-next{
+  width: 2%;
+  pointer-events: auto;
+}
+
+#testimonialsCarousel .carousel-control-prev-icon,
+#testimonialsCarousel .carousel-control-next-icon{
+  pointer-events: none;
+}
+
+/* Darken form controls in Contact section */
+#contact .form-control {
+  background-color: rgba(40, 44, 52, 0.85);
+  color: #e8ecf1;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#contact .form-control::placeholder {
+  color: rgba(232, 236, 241, 0.55);
+}
+
+/* Focus state (important for UX) */
+#contact .form-control:focus {
+  background-color: rgba(40, 44, 52, 0.95);
+  color: #ffffff;
+  border-color: #0d6efd; /* Bootstrap primary */
+  box-shadow: none;
+}
+
+/* Hyperlinks icons */
+/* Social icon base */
+#contact .contact-icon i {
+  font-size: 1.9rem;
+  transition: color 0.2s ease;
+}
+
+/* Hover background (no white flash) */
+#contact .contact-icon:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(13,110,253,0.6);
+}
+
+/* Per-icon hover colors */
+#contact .contact-icon:hover .bi-github {
+  color: #7c2cf5; /* GitHub purple */
+}
+
+#contact .contact-icon:hover .bi-linkedin {
+  color: #0126f7; /* LinkedIn blue */
+}
+
+#contact .contact-icon:hover .bi-youtube {
+  color: #ff0000; /* YouTube red */
+}
+
+
+/* Contact email links */
+#contact .contact-email {
+  color: #18ea14;
+  opacity: 0.85;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+#contact .contact-email:hover {
+  opacity: 1;
+}
+
+/* Icon hover accents */
+#contact .contact-email:hover .bi-envelope {
+  color: #0d19fd; /* blue */
+}
+
+#contact .contact-email:hover .bi-mortarboard {
+  color: #ea1810; /* academic purple */
+}
+
+/* Social icon buttons */
+.contact-icon{
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.06);
+
+  text-decoration: none;
+  transition: transform .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.contact-icon i{
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.contact-icon:hover{
+  transform: translateY(-2px);
+  background: rgba(13,110,253,0.18);  /* no white */
+  border-color: rgba(13,110,253,0.55);
+  color: #0d6efd;
+}
+
+/* Email links (separate sizing) */
+.contact-email{
+  color: rgba(255,255,255,0.9);
+}
+
+.contact-email:hover{
+  color: #0d6efd;
+}
+
+.email-icon{
+  font-size: 2.10rem; /* bigger without affecting the social buttons */
+}
+
+
+/* Slightly smaller on very small screens */
+@media (max-width: 576px) {
+  .skill-logo {
+    height: 46px;
+  }
+}
+
+/* Text inside cards (important fix) */
+.section-card p {
+  color: var(--text-color);
+  line-height: 1.65;
+  max-width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.0rem;
+}
+/* Make Bootstrap's text-muted readable on dark cards */
+.card .text-muted {
+  color: rgba(232, 236, 241, 0.75) !important;
+}
+
+/* Make small label text readable inside cards */
+.card small,
+.card .small {
+  color: rgba(232, 236, 241, 0.85);
+}
+
+
+/* Section titles */
+.section-card h2,
+.section-card h3 {
+  color: #d8d5d5;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero-title {
+  color: var(--primary-color);
+ 
+
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+  max-width: 100%;
+}
+
+.profile-img {
+  max-width: 180px;
+  border-radius: 12px;
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+
+.text-muted {
+  color: var(--muted-text) !important;
+}
+.profile-img {
+  max-width: 240px;   /* slightly bigger */
+  opacity: 0.65;       /* subtle transparency */
+  transition: opacity 0.3s ease;
+}
+
+.profile-img:hover {
+  opacity: 1;
+}
+
+/* Improve About text readability on small screens */
+@media (max-width: 575px) {
+  #about p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+.card .bi {
+  color: #4dabf7;
+}
+.text-purple {
+  color: #7952b3; /* Bootstrap brand color */
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(22, 26, 32, 0.9);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  color: #eaf1e8;
+}
+
+.footer p {
+  color: #0cc528cb;
+}
+
+.footer-social {
+  color: #e8ecf1;
+  font-size: 1.4rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Brand hover colors */
+.footer-social:hover .bi-github { color: #6e5494; }
+.footer-social:hover .bi-linkedin { color: #0a66c2; }
+.footer-social:hover .bi-youtube { color: #ff0000; }
