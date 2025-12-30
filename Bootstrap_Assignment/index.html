@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="icon" href="logo (1).svg" />
+
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+<!-- Bootstrap Icons -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+>
+<!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-dark sticky-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#top" data-i18n="navBrand">Israel G.</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto d-flex gap-md-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills" data-i18n="navSkills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Language buttons -->
+      <div class="d-flex gap-2 ms-md-3 mt-3 mt-md-0">
+        <button class="btn btn-sm btn-outline-light" type="button" onclick="setLanguage('en')">EN</button>
+        <button class="btn btn-sm btn-outline-light" type="button" onclick="setLanguage('fi')">FI</button>
+        <button class="btn btn-sm btn-outline-light" type="button" onclick="setLanguage('es')">ES</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+
+<!-- HERO SECTION -->
+
+<div class="container mt-5">
+    <!-- HERO TITLE -->
+<div class="row mb-4">
+  <div class="col">
+    <div class="section-card text-center py-3">
+      <h1 class="hero-title mb-1" data-i18n="title"></h1>
+      <p class="text-muted mb-0" data-i18n="subtitle"></p>
+    </div>
+  </div>
+</div>
+    <!-- ABOUT ME -->
+<div class="row mb-5" id="about">
+ <div class="col-12 col-lg-10 mx-auto">
+    <div class="section-card p-4">
+
+      <h2 class="fw-bold text-center text-lg-start mb-3" data-i18n="aboutTitle"></h2>
+
+<div class="row align-items-center">
+  <!-- LEFT: text + buttons -->
+  <div class="col-12 col-sm-7 col-lg-8 text-center text-sm-start">
+
+    <!-- About text (paragraphs) -->
+<p data-i18n="aboutP1"></p>
+<p data-i18n="aboutP2"></p>
+<p data-i18n="aboutP3" class="mb-0"></p>
+
+
+    <!-- Buttons -->
+    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="aboutBtnPrimary"></a>
+      <a href="#contact" class="btn btn-outline-secondary btn-sm" data-i18n="aboutBtnSecondary"></a>
+    </div>
+  </div>
+
+  <!-- RIGHT: Image -->
+  <div class="col-12 col-sm-5 col-lg-4 text-center mt-4 mt-sm-0">
+
+    <!-- Image -->
+    <img
+      src="isra-pic25.png"
+      alt="Profile photo"
+      class="img-fluid rounded profile-img shadow-sm"
+    >
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HOBBIES -->
+<div class="row mb-5" id="hobbies">
+  <div class="col-12 col-lg-10 mx-auto">
+    <div class="section-card p-4">
+
+      <h2 class="fw-bold text-center text-lg-start mb-3" data-i18n="hobbiesTitle"></h2>
+
+      <div class="row g-3 align-items-stretch">
+        <!-- Music -->
+        <div class="col-12 col-md-6">
+          <div class="card h-100 bg-transparent border-0">
+            <div class="card-body p-0">
+              <h5 class="fw-semibold mb-2" data-i18n="hobbyMusicTitle"></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent text-light border-secondary" data-i18n="hobbyMusicItem1"></li>
+                <li class="list-group-item bg-transparent text-light border-secondary" data-i18n="hobbyMusicItem2"></li>
+                <li class="list-group-item bg-transparent text-light border-secondary" data-i18n="hobbyMusicItem3"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="col-12 col-md-6">
+          <div class="card h-100 bg-transparent border-0">
+            <div class="card-body p-0">
+              <h5 class="fw-semibold mb-2" data-i18n="hobbySportsTitle"></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent text-light border-secondary" data-i18n="hobbySportsItem1"></li>
+                <li class="list-group-item bg-transparent text-light border-secondary" data-i18n="hobbySportsItem2"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="row mb-5" id="skills">
+  <div class="col-12 col-lg-10 mx-auto">
+    <div class="section-card p-4">
+
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2 class="fw-bold mb-0" data-i18n="skillsTitle"></h2>
+        <span class="badge rounded-pill text-bg-primary" data-i18n="skillsBadge"></span>
+      </div>
+
+      <div class="row g-3 align-items-stretch">
+        <!-- Front-end -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 ">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title d-flex align-items-center gap-2">
+                <i class="bi bi-code-slash"></i>
+                <span data-i18n="skillsCard1Title"></span>
+              </h5>
+
+              <p class="card-text text-muted" data-i18n="skillsCard1Text"></p>
+
+        <!-- Skill logos -->
+<div class="d-flex justify-content-center gap-4 mb-3">
+  <img src="html-logo2.png" alt="HTML" class="skill-logo">
+  <img src="css_logo.png" alt="Css" class="skill-logo">
+  <img src="bootstrap-logo.png" alt="Bootstrap" class="skill-logo">
+</div>
+         <!-- Skill levels -->
+              <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                  <small>HTML</small><small>100%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                  <small>CSS</small><small>100%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between">
+                  <small>Bootstrap</small><small>75%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title" data-i18n="skillsCard2Title"></h5>
+              <p class="card-text text-muted" data-i18n="skillsCard2Text"></p>
+        
+              <!-- Tools Logos -->
+<div class="d-flex justify-content-center gap-4 mb-3">
+  <img src="github-logo.png" alt="Github" class="skill-logo">
+  <img src="visual-studio-logo.png" alt="Visual Studio" class="skill-logo">
+</div>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-secondary">GitHub</span>
+                <span class="badge text-bg-secondary">VS Code</span>
+                <span class="badge text-bg-secondary">Git</span>
+                <span class="badge text-bg-secondary">Markdown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud / Platforms -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title" data-i18n="skillsCard3Title"></h5>
+              <p class="card-text text-muted" data-i18n="skillsCard3Text"></p>
+        
+              <!-- Cloud / Platforms Logos -->
+<div class="d-flex justify-content-center gap-4 mb-3">
+  <img src="azure-logo.png" alt="Azure" class="skill-logo">
+  <img src="github-mark-white.png" alt="Visual Studio" class="skill-logo">
+</div>
+
+              <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                  <small>Azure (basic)</small><small>40%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                  <small>Repos / Version control</small><small>70%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="alert alert-secondary mt-3 mb-0" role="alert" data-i18n="skillsNote"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Creative & Media Tools -->
+<div class="col-12 col-md-4">
+  <div class="card h-100">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title d-flex align-items-center gap-2">
+        <img src="cubase-icon.jpg" alt="Cubase" class="skill-logo">
+        <img src="Guitar_Pro-icon.png" alt="Guitar Pro" class="skill-logo">
+        <img src="NCH-logo.png" alt="NCH" class="skill-logo">
+        <img src="videoPad-logo.jpg" alt="VideoPad" class="skill-logo">
+        <span data-i18n="skillsCard4Title"></span>
+      </h5>
+
+      <p class="card-text text-muted" data-i18n="skillsCard4Text"></p>
+
+      <div class="mt-auto d-flex flex-wrap gap-2">
+        <span class="badge text-bg-secondary">Audio editing</span>
+        <span class="badge text-bg-secondary">MIDI</span>
+        <span class="badge text-bg-secondary">Arrangement</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS SECTION -->
+<div class="row mb-5" id="testimonials">
+  <div class="col-12 col-lg-10 mx-auto">
+    <div class="section-card p-4">
+
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2 class="fw-bold mb-0" data-i18n="testimonialsTitle"></h2>
+        <span class="badge rounded-pill bg-primary" data-i18n="testimonialsBadge"></span>
+      </div>
+
+      <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="p-3">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="Jeff-Bezos.png"
+                  alt="Placeholder testimonial avatar"
+                  class="testimonial-avatar"
+                >
+                <div>
+                  <p class="mb-1" data-i18n="t1Text"></p>
+                  <div class="small text-muted" data-i18n="t1Name"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="p-3">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="Steve Jobs.jpg"
+                  alt="Placeholder testimonial avatar"
+                  class="testimonial-avatar"
+                >
+                <div>
+                  <p class="mb-1" data-i18n="t2Text"></p>
+                  <div class="small text-muted" data-i18n="t2Name"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="p-3">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="linus-torvalds.jpg"
+                  alt="Placeholder testimonial avatar"
+                  class="testimonial-avatar"
+                >
+                <div>
+                  <p class="mb-1" data-i18n="t3Text"></p>
+                  <div class="small text-muted" data-i18n="t3Name"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /.carousel-inner -->
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> <!-- /#testimonialsCarousel -->
+
+      <!-- Disclaimer -->
+      <p class="small text-muted mt-3 mb-0" data-i18n="testimonialsDisclaimer"></p>
+       
+
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="row mb-5" id="contact">
+  <div class="col-12 col-lg-10 mx-auto">
+    <div class="section-card p-4">
+
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2 class="fw-bold mb-0" data-i18n="contactTitle"></h2>
+        <span class="badge rounded-pill bg-primary" data-i18n="contactBadge"></span>
+      </div>
+
+      <div class="row g-3 align-items-start">
+
+       <!-- Left: text -->
+<div class="col-12 col-md-5">
+  <p class="mb-3" data-i18n="contactIntro"></p>
+
+  <div class="d-flex flex-column gap-2 small">
+    <div>
+      <span class="text-muted" data-i18n="contactLocationLabel"></span>
+      <span data-i18n="contactLocationValue"></span>
+    </div>
+    <div>
+      <span class="text-muted" data-i18n="contactFocusLabel"></span>
+      <span data-i18n="contactFocusValue"></span>
+    </div>
+  </div>
+
+  <!-- Social icons -->
+  <div class="mt-3 d-flex flex-wrap gap-2">
+    <a class="contact-icon" href="https://github.com/IsraelGarcia666" target="_blank" aria-label="GitHub" rel="noreferrer">
+      <i class="bi bi-github social-icon"></i>
+    </a>
+
+    <a class="contact-icon" href="https://www.linkedin.com/in/israel-garcia-real-680837236" target="_blank" aria-label="LinkedIn" rel="noreferrer">
+      <i class="bi bi-linkedin social-icon"></i>
+    </a>
+
+    <a class="contact-icon" href="https://www.youtube.com/@israelelhuecapantic3806" target="_blank" aria-label="YouTube" rel="noreferrer">
+      <i class="bi bi-youtube social-icon"></i>
+    </a>
+  </div>
+
+  <!-- Emails -->
+  <div class="mt-3 d-flex flex-column gap-2 small">
+    <a href="mailto:Israel.Garcia.Real@student.laurea.fi"
+       class="d-flex align-items-center gap-2 text-decoration-none contact-email">
+      <i class="bi bi-mortarboard email-icon"></i>
+      <span data-i18n="contactEmailSchool"></span>
+    </a>
+
+    <a href="mailto:israelelhuecapantic@gmail.com"
+       class="d-flex align-items-center gap-2 text-decoration-none contact-email">
+      <i class="bi bi-envelope email-icon"></i>
+      <span data-i18n="contactEmailPersonal"></span>
+    </a>
+  </div>
+</div>
+
+        <!-- Right: form -->
+<div class="col-12 col-md-7">
+  <form class="row g-3" id="contactForm">
+
+    <div class="col-12 col-md-6">
+      <label class="form-label" data-i18n="contactNameLabel"></label>
+      <input
+        id="contactName"
+        type="text"
+        class="form-control"
+        data-i18n-placeholder="contactNamePh"
+      >
+    </div>
+
+    <div class="col-12 col-md-6">
+      <label class="form-label" data-i18n="contactEmailLabel"></label>
+      <input
+        id="contactEmail"
+        type="email"
+        class="form-control"
+        data-i18n-placeholder="contactEmailPh"
+      >
+    </div>
+
+    <div class="col-12">
+      <label class="form-label" data-i18n="contactMsgLabel"></label>
+      <textarea
+        id="contactMsg"
+        class="form-control"
+        rows="4"
+        data-i18n-placeholder="contactMsgPh"
+      ></textarea>
+    </div>
+
+    <div class="col-12 d-flex justify-content-end">
+      <!-- IMPORTANT: type="submit" -->
+      <button type="submit" class="btn btn-primary" data-i18n="contactSendBtn"></button>
+    </div>
+
+    <div class="col-12">
+      <div class="alert alert-secondary mb-0" role="alert" data-i18n="contactNote"></div>
+    </div>
+
+  </form>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer py-3 mt-4">
+  <div class="container text-center">
+
+    <p class="mb-2 small">
+      © <span id="footerYear"></span>
+      <strong>Israel G.</strong> —
+      <span data-i18n="footerTagline"></span>
+    </p>
+
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://github.com/IsraelGarcia666" target="_blank" class="footer-social" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/israel-garcia-real-680837236" target="_blank" class="footer-social" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.youtube.com/@israelelhuecapantic3806" target="_blank" class="footer-social" aria-label="YouTube">
+        <i class="bi bi-youtube"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+     crossorigin="anonymous"></script>
+     <script>
+  const translations = {
+    en: {
+  title: "Israel Garcia — IT & Logistics Portfolio",
+  subtitle: "Business Information Technology student (Digital Services) • Pharmaceutical Logistics Center Operations • HTML, CSS & Bootstrap projects",
+  aboutTitle: "About Me",
+ aboutP1: "I work in operations at Tamro Oyj’s Pharmaceutical Logistics Center and I am studying Business Information Technology with a specialization in Digital Services at Laurea University of Applied Sciences. During my studies, I have learned to build web projects using HTML, CSS, and Bootstrap, and I practice version control by creating repositories on GitHub. I work with development tools such as Visual Studio Code and have basic experience with cloud and server platforms, including Azure.",
+aboutP2: "Before moving into logistics and IT, my professional background was in anthropological and archival research. I worked on research projects for Arkamax S.A. de C.V. in collaboration with Banco de México, as well as with the Institute of Historical Studies Carlos Sigüenza y Góngora and the National Archives of Mexico (AGN). My work focused on the identification, classification, diagnosis, and organization of historical archives.",
+aboutP3: "This background strengthened my analytical skills, attention to detail, and structured approach to information — skills that I now apply in logistics operations, IT studies, and digital projects. I am particularly interested in roles connected to Health Technology Services, and I have supported teams during periods of high workload. Earlier in my career, I also gained Finnish customer service experience while working at Sokos Hotel.",
+
+hobbiesTitle: "Hobbies",
+hobbyMusicTitle: "Music",
+hobbyMusicItem1: "Classical guitar & classical music (Instituto Nacional de Bellas Artes, 1993–1997)",
+hobbyMusicItem2: "Metal guitarist (Midjungards 2023; Dead Loss 2013–2017; Sacrament 2014–2017; Ceaseless Torment 2012–2013)",
+hobbyMusicItem3: "Music production (Cubase) and basic video editing (NCH)",
+hobbySportsTitle: "Sports & Outdoors",
+hobbySportsItem1: "Football",
+hobbySportsItem2: "Cycling",
+
+skillsTitle: "Skills",
+skillsBadge: "Bootstrap 5 + Custom CSS",
+skillsCard1Title: "Front-end Development",
+skillsCard1Text: "Completed HTML and CSS courses on Codecademy. Building responsive layouts using HTML, CSS, and Bootstrap, with practical projects developed during the current semester.",
+skillsCard2Title: "Tools",
+skillsCard2Text: "Daily workflow tools for coding, version control, and documentation.",
+skillsCard3Title: "Cloud & Platforms",
+skillsCard3Text: "Basic experience with cloud platforms and repository-based development.",
+skillsNote: "Note: Levels are self-assessed and based on current coursework and projects.",
+skillsCard4Title: "Creative & Media Tools",
+skillsCard4Text: "Use of creative software for music and basic media production. Experience with Guitar Pro for music notation and practice, Cubase for basic music production using MIDI tracks (e.g., drums and bass), and NCH software for basic video editing and media processing.",
+
+testimonialsTitle: "Testimonials",
+testimonialsBadge: "Feedback",
+t1Text: "Reliable and professional. Israel stays calm under pressure and communicates clearly.",
+t1Name: "— Colleague (Logistics Operations)",
+t2Text: "Strong teamwork and a structured approach to tasks. Good attention to detail.",
+t2Name: "— Study group peer (BIT)",
+t3Text: "Shows initiative and learns fast. Clear improvement across the semester.",
+t3Name: "— Course feedback summary",
+testimonialsDisclaimer: "*Testimonials shown are placeholders for layout demonstration purposes.*",
+
+contactTitle: "Contact",
+contactBadge: "Get in touch",
+contactIntro: "If you’d like to connect about studies, projects, or opportunities in digital services and health technology, feel free to message me.",
+contactLocationLabel: "Location: ",
+contactLocationValue: "Finland",
+contactFocusLabel: "Focus: ",
+contactFocusValue: "Digital Services • Health Tech • Logistics Operations",
+contactBtnGitHub: "GitHub",
+contactBtnLinkedIn: "LinkedIn",
+contactNameLabel: "Name",
+contactEmailLabel: "Email",
+contactMsgLabel: "Message",
+contactSendBtn: "Send message",
+contactNote: "Note: If you would like more detailed information about my profile, I can provide my CV and a full printable portfolio upon request.",
+contactNamePh: "Your name",
+contactEmailPh: "your.email@example.com",
+contactMsgPh: "Write your message here…",
+contactEmailSchool: "Student email (Laurea UAS)",
+contactEmailPersonal: "Personal email",
+footerTagline: "Portfolio website created for academic purposes",
+
+
+  aboutBtnPrimary: "Request a Quote",
+  aboutBtnSecondary: "Contact me",
+  navBrand: "Israel G.",
+navHome: "Home",
+navAbout: "About",
+navSkills: "Skills",
+navHobbies: "Hobbies",
+navContact: "Contact",
+
+},
+fi: {
+  title: "Israel Garcia — IT- ja Logistiikkaportfolio",
+  subtitle: "Business Information Technology (Tradenomi) -opiskelija (Digital Services) • Lääkelogistiikkakeskuksen operaatiot • HTML-, CSS- ja Bootstrap-projektit",
+  aboutTitle: "Minusta",
+ aboutP1: "Työskentelen operatiivisissa tehtävissä Tamro Oyj:n lääketeollisuuden logistiikkakeskuksessa ja opiskelen Business Information Technology -koulutusohjelmassa digitaalisten palveluiden erikoistumislinjalla Laurea-ammattikorkeakoulussa. Opintojeni aikana olen oppinut rakentamaan verkkoprojekteja HTML:n, CSS:n ja Bootstrapin avulla sekä harjoitellut versionhallintaa luomalla repositorioita GitHubissa. Käytän kehitystyökaluja, kuten Visual Studio Codea, ja minulla on perustason osaamista pilvi- ja palvelinympäristöistä, mukaan lukien Azure.",
+aboutP2: "Ennen siirtymistä logistiikan ja IT:n pariin ammatillinen taustani oli antropologisessa ja arkistotutkimuksessa. Työskentelin tutkimushankkeissa Arkamax S.A. de C.V.:ssä yhteistyössä Banco de Méxicon kanssa sekä Instituto de Investigaciones Históricas Carlos Sigüenza y Góngoran ja Meksikon kansallisarkiston (AGN) kanssa. Työni keskittyi historiallisten arkistojen tunnistamiseen, luokitteluun, analysointiin ja organisointiin.",
+aboutP3: "Tämä tausta vahvisti analyyttisiä taitojani, huolellisuutta sekä systemaattista lähestymistapaa tiedon käsittelyyn — taitoja, joita hyödynnän nykyisin logistiikkatoiminnoissa, IT-opinnoissa ja digitaalisissa projekteissa. Olen erityisen kiinnostunut Health Technology Services -alaan liittyvistä rooleista ja olen tukenut tiimejä korkean työkuorman aikana. Aiemmin urallani kartutin myös suomalaista asiakaspalvelukokemusta työskennellessäni Sokos-hotellissa."
+,
+
+hobbiesTitle: "Harrastukset",
+hobbyMusicTitle: "Musiikki",
+hobbyMusicItem1: "Klassinen kitara ja klassinen musiikki (INBA, 1993–1997)",
+hobbyMusicItem2: "Metallikitaristi (Midjungards 2023; Dead Loss 2013–2017; Sacrament 2014–2017; Ceaseless Torment 2012–2013)",
+hobbyMusicItem3: "Musiikkituotanto (Cubase) ja perusvideonmuokkaus (NCH)",
+hobbySportsTitle: "Urheilu & ulkoilu",
+hobbySportsItem1: "Jalkapallo",
+hobbySportsItem2: "Pyöräily",
+
+skillsTitle: "Osaaminen",
+skillsBadge: "Bootstrap 5 + oma CSS",
+skillsCard1Title: "Front-end-kehitys",
+skillsCard1Text: "HTML- ja CSS-kurssit suoritettu Codecademyssa. Responsiivisten näkymien toteuttaminen HTML:llä, CSS:llä ja Bootstrapilla opintojen ja projektien kautta.",
+skillsCard2Title: "Työkalut",
+skillsCard2Text: "Päivittäiset työkalut koodaukseen, versionhallintaan ja dokumentointiin.",
+skillsCard3Title: "Pilvi & alustat",
+skillsCard3Text: "Peruskokemusta pilvipalveluista ja repositoriopohjaisesta kehityksestä.",
+skillsNote: "Huom: Tasot ovat oma arvio ja perustuvat nykyisiin opintoihin ja projekteihin.",
+skillsCard4Title: "Luovat ja mediatyökalut",
+skillsCard4Text: "Luovien ohjelmistojen käyttö musiikin ja perusmediasisällön tuottamiseen. Kokemusta Guitar Prosta musiikin nuotinnukseen ja harjoitteluun, Cubasesta perusmusiikkituotantoon MIDI-raitojen (esim. rummut ja basso) avulla sekä NCH-ohjelmistoista perusvideonmuokkaukseen ja median käsittelyyn.",
+
+testimonialsTitle: "Suositukset",
+testimonialsBadge: "Palaute",
+t1Text: "Luotettava ja ammattimainen. Israel toimii rauhallisesti paineen alla ja viestii selkeästi.",
+t1Name: "— Työkaveri (logistiikka)",
+t2Text: "Hyvä tiimityö ja järjestelmällinen ote tehtäviin. Tarkka ja huolellinen.",
+t2Name: "— Opiskeluryhmän jäsen (BIT)",
+t3Text: "Ottaa aloitteita ja oppii nopeasti. Selkeä kehitys lukukauden aikana.",
+t3Name: "— Kurssipalautteen yhteenveto",
+testimonialsDisclaimer: "*Suositukset ovat paikkamerkkejä ulkoasun demonstrointia varten.*",
+
+contactTitle: "Yhteys",
+contactBadge: "Ota yhteyttä",
+contactIntro: "Jos haluat olla yhteydessä opintoihin, projekteihin tai mahdollisuuksiin liittyen (digitaaliset palvelut, health tech), laita viestiä.",
+contactLocationLabel: "Sijainti: ",
+contactLocationValue: "Suomi",
+contactFocusLabel: "Painopiste: ",
+contactFocusValue: "Digitaaliset palvelut • Health Tech • Logistiikkatoiminnot",
+contactBtnGitHub: "GitHub",
+contactBtnLinkedIn: "LinkedIn",
+contactNameLabel: "Nimi",
+contactEmailLabel: "Sähköposti",
+contactMsgLabel: "Viesti",
+contactSendBtn: "Lähetä viesti",
+contactNote: "Huom: Jos haluat tarkempaa tietoa profiilistani, voin toimittaa CV:ni ja täydellisen tulostettavan portfolion pyynnöstä.",
+contactNamePh: "Nimesi",
+contactEmailPh: "sinun.sahkoposti@example.com",
+contactMsgPh: "Kirjoita viestisi tähän…",
+contactEmailSchool: "Opiskelijasähköposti (Laurea UAS)",
+contactEmailPersonal: "Henkilökohtainen sähköposti",
+footerTagline: "Portfolio-sivusto luotu akateemisiin tarkoituksiin",
+
+  aboutBtnPrimary: "Pyydä tarjous",
+  aboutBtnSecondary: "Ota yhteyttä",
+  navBrand: "Israel G.",
+navHome: "Koti",
+navAbout: "Minusta",
+navSkills: "Taidot",
+navHobbies: "Harrastukset",
+navContact: "Yhteystiedot",
+},
+es: {
+  title: "Israel Garcia — Portafolio de IT y Logística",
+  subtitle: "Estudiante de Tecnologías de la Información Empresarial (Servicios Digitales) • Operaciones en Centro de Logística Farmacéutica • Proyectos en HTML, CSS y Bootstrap",
+  aboutTitle: "Sobre mí",
+  aboutP1: "Trabajo en operaciones en el Centro de Logística Farmacéutica de Tamro Oyj y actualmente estudio Business Information Technology con especialización en Digital Services en la Universidad de Ciencias Aplicadas Laurea. Durante mis estudios he aprendido a desarrollar proyectos web utilizando HTML, CSS y Bootstrap, y practico control de versiones mediante la creación de repositorios en GitHub. Trabajo con herramientas de desarrollo como Visual Studio Code y tengo experiencia básica en plataformas de nube y servidores, incluyendo Azure.",
+aboutP2: "Antes de incorporarme al ámbito de la logística y la tecnología de la información, mi trayectoria profesional estuvo vinculada a la investigación antropológica y archivística. Participé en proyectos de investigación en Arkamax S.A. de C.V. en colaboración con el Banco de México, así como con el Instituto de Investigaciones Históricas Carlos Sigüenza y Góngora y el Archivo General de la Nación (AGN). Mi trabajo se centró en la identificación, clasificación, diagnóstico y organización de archivos históricos.",
+aboutP3: "Esta experiencia fortaleció mis habilidades analíticas, la atención al detalle y un enfoque estructurado en el manejo de la información — competencias que actualmente aplico en operaciones logísticas, estudios en IT y proyectos digitales. Estoy particularmente interesado en roles relacionados con Health Technology Services y he apoyado a equipos durante períodos de alta carga laboral. En una etapa anterior de mi carrera, también adquirí experiencia en atención al cliente en Finlandia trabajando en Sokos Hotel."
+,
+
+hobbiesTitle: "Hobbies",
+hobbyMusicTitle: "Música",
+hobbyMusicItem1: "Guitarra clásica y música clásica (INBA, 1993–1997)",
+hobbyMusicItem2: "Guitarrista de metal (Midjungards 2023; Dead Loss 2013–2017; Sacrament 2014–2017; Ceaseless Torment 2012–2013)",
+hobbyMusicItem3: "Producción musical (Cubase) y edición básica de video (NCH)",
+hobbySportsTitle: "Deportes y aire libre",
+hobbySportsItem1: "Fútbol",
+hobbySportsItem2: "Ciclismo",
+
+skillsTitle: "Habilidades",
+skillsBadge: "Bootstrap 5 + CSS personalizado",
+skillsCard1Title: "Desarrollo Front-end",
+skillsCard1Text: "Cursos de HTML y CSS completados en Codecademy. Desarrollo de interfaces responsivas con HTML, CSS y Bootstrap a través de proyectos académicos.",
+skillsCard2Title: "Herramientas",
+skillsCard2Text: "Herramientas diarias para programar, controlar versiones y documentar.",
+skillsCard3Title: "Nube y plataformas",
+skillsCard3Text: "Experiencia básica con plataformas en la nube y desarrollo con repositorios.",
+skillsNote: "Nota: Niveles autoevaluados según los cursos y proyectos actuales.",
+skillsCard4Title: "Herramientas creativas y multimedia",
+skillsCard4Text: "Uso de software creativo para producción musical y multimedia básica. Experiencia con Guitar Pro para notación y práctica musical, Cubase para producción musical básica mediante pistas MIDI (por ejemplo, batería y bajo), y software NCH para edición básica de video y procesamiento multimedia.",
+
+testimonialsTitle: "Testimonios",
+testimonialsBadge: "Comentarios",
+t1Text: "Confiable y profesional. Israel mantiene la calma bajo presión y se comunica con claridad.",
+t1Name: "— Compañero/a de trabajo (operaciones logísticas)",
+t2Text: "Buen trabajo en equipo y enfoque estructurado en las tareas. Gran atención al detalle.",
+t2Name: "— Compañero/a de equipo (BIT)",
+t3Text: "Muestra iniciativa y aprende rápido. Se nota una mejora clara durante el semestre.",
+t3Name: "— Resumen de retroalimentación del curso",
+testimonialsDisclaimer: "*Los testimonios mostrados son marcadores de posición para demostrar el diseño.*",
+
+contactTitle: "Contacto",
+contactBadge: "Hablemos",
+contactIntro: "Si quieres conectar sobre estudios, proyectos u oportunidades en servicios digitales y health tech, puedes enviarme un mensaje.",
+contactLocationLabel: "Ubicación: ",
+contactLocationValue: "Finlandia",
+contactFocusLabel: "Enfoque: ",
+contactFocusValue: "Servicios Digitales • Health Tech • Operaciones Logísticas",
+contactBtnGitHub: "GitHub",
+contactBtnLinkedIn: "LinkedIn",
+contactNameLabel: "Nombre",
+contactEmailLabel: "Correo",
+contactMsgLabel: "Mensaje",
+contactSendBtn: "Enviar",
+contactNote: "Nota: Si desea obtener información más detallada sobre mi perfil, puedo enviarle mi CV y mi portafolio completo en versión para imprimir.",
+contactNamePh: "Tu nombre",
+contactEmailPh: "tu.correo@example.com",
+contactMsgPh: "Escribe tu mensaje aquí…",
+contactEmailSchool: "Correo académico (Laurea UAS)",
+contactEmailPersonal: "Correo personal",
+footerTagline: "Sitio web de portafolio creado con fines académicos",
+
+  aboutBtnPrimary: "Solicitar presupuesto",
+  aboutBtnSecondary: "Contáctame",
+  navBrand: "Israel G.",
+navHome: "Inicio",
+navAbout: "Sobre mí",
+navSkills: "Habilidades",
+navHobbies: "Intereses",
+navContact: "Contacto",
+}
+
+  };
+
+  function setLanguage(lang) {
+    // Update normal text
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      el.textContent = translations[lang][el.dataset.i18n];
+    });
+
+    //  Update placeholders
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    el.setAttribute(
+      "placeholder",
+      translations[lang][el.dataset.i18nPlaceholder]
+    );
+  });
+  }
+
+  setLanguage("en");
+
+  // Contact form → open email client with form content
+  document.getElementById("contactForm")?.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const message = document.getElementById("contactMsg").value.trim();
+
+    const subject = encodeURIComponent(
+      `Portfolio contact from ${name || "visitor"}`
+    );
+
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
+
+    window.location.href =
+      `mailto:Israel.Garcia.Real@student.laurea.fi?subject=${subject}&body=${body}`;
+  });
+
+  setLanguage("en");
+  
+</script>
+
+<!-- =========================
+     AUTO CURRENT YEAR
+========================== -->
+<script>
+  const yearEl = document.getElementById("footerYear");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+</script>
+
+
+  </body>
+</html>

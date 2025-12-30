@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Bootstrap",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
