@@ -1,0 +1,11 @@
+# VS Code
+*.code-workspace
+
+# Temporary / Office files
+~$*
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.docx
