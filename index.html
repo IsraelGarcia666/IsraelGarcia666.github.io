@@ -548,8 +548,8 @@
             >
               <div class="checkmark-wrapper mb-2">✓</div>
 
-              <h4 data-i18n="thank_you_title">Thank you!</h4>
-              <p data-i18n="thank_you_text">
+              <h4 data-i18n="thankYouTitle">Thank you!</h4>
+              <p data-i18n="thankYouText">
                 Your message is ready. Your email client will open shortly.
               </p>
             </div>
@@ -657,9 +657,8 @@ contactNote: "Note: If you would like more detailed information about my profile
 contactNamePh: "Your name",
 contactEmailPh: "your.email@example.com",
 contactMsgPh: "Write your message here…",
-thank_you_title: "Thank you!",
-          thank_you_text:
-            "Your message is ready to be sent. Your email client will open shortly.",
+thankYouTitle: "Thank you!",
+thankYouText: "Your message is ready. Your email client will open shortly.",
 contactEmailSchool: "Student email (Laurea UAS)",
 contactEmailPersonal: "Personal email",
 footerTagline: "Portfolio website created for academic and professional purposes",
@@ -740,9 +739,8 @@ contactNote: "Huom: Jos haluat tarkempaa tietoa profiilistani, voin toimittaa CV
 contactNamePh: "Nimesi",
 contactEmailPh: "sinun.sahkoposti@example.com",
 contactMsgPh: "Kirjoita viestisi tähän…",
-thank_you_title: "Kiitos!",
-          thank_you_text:
-            "Viestisi on valmis lähetettäväksi. Sähköpostiohjelmasi avautuu pian.",
+thankYouTitle: "Kiitos!",
+thankYouText: "Viestisi on valmis. Sähköpostiohjelmasi avautuu pian.",
 contactEmailSchool: "Opiskelijasähköposti (Laurea UAS)",
 contactEmailPersonal: "Henkilökohtainen sähköposti",
 footerTagline: "Akateemisiin ja ammatillisiin tarkoituksiin luotu portfoliosivusto",
@@ -821,9 +819,8 @@ contactNote: "Nota: Si desea obtener información más detallada sobre mi perfil
 contactNamePh: "Tu nombre",
 contactEmailPh: "tu.correo@example.com",
 contactMsgPh: "Escribe tu mensaje aquí…",
-thank_you_title: "Kiitos!",
-          thank_you_text:
-            "Viestisi on valmis lähetettäväksi. Sähköpostiohjelmasi avautuu pian.",
+thankYouTitle: "¡Gracias!",
+thankYouText: "Tu mensaje está listo. Tu cliente de correo se abrirá en breve.",
 contactEmailSchool: "Correo académico (Laurea UAS)",
 contactEmailPersonal: "Correo personal",
 footerTagline: "Sitio web de portafolio creado con fines académicos y profesionales.",
@@ -861,25 +858,31 @@ navContact: "Contacto",
 
   setLanguage("en");
 
-  // Contact form → open email client with form content
-  document.getElementById("contactForm")?.addEventListener("submit", function (e) {
-    e.preventDefault();
+// Contact form → show thank you + open email client
+document.getElementById("contactForm")?.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const name = document.getElementById("contactName").value.trim();
-    const email = document.getElementById("contactEmail").value.trim();
-    const message = document.getElementById("contactMsg").value.trim();
+  const name = document.getElementById("contactName").value.trim();
+  const email = document.getElementById("contactEmail").value.trim();
+  const message = document.getElementById("contactMsg").value.trim();
 
-    const subject = encodeURIComponent(
-      `Portfolio contact from ${name || "visitor"}`
-    );
+  // 1) Show thank-you message
+  const thankYou = document.getElementById("thankYouMessage");
+  thankYou?.classList.remove("d-none");
 
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    );
+  // Optional: hide the form after submit
+  // this.classList.add("d-none");
 
+  const subject = encodeURIComponent(`Portfolio contact from ${name || "visitor"}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+  // 2) Small delay so the message is visible before mail client opens
+  setTimeout(() => {
     window.location.href =
       `mailto:Israel.Garcia.Real@student.laurea.fi?subject=${subject}&body=${body}`;
-  });
+  }, 150);
+});
+
 
   // Read more / Read less toggle
 
