@@ -134,6 +134,21 @@ body {
   pointer-events: none;
 }
 
+#testimonialsCarousel .carousel-control-prev-icon,
+#testimonialsCarousel .carousel-control-next-icon {
+  filter: invert(1) brightness(2);
+}
+
+/* Fluorescent green arrows for testimonials */
+#testimonialsCarousel .carousel-control-prev-icon,
+#testimonialsCarousel .carousel-control-next-icon {
+  filter: invert(62%) sepia(96%) saturate(1300%) hue-rotate(85deg)
+    brightness(115%) contrast(110%);
+  background-size: 1.9rem 1.5rem; /* same size, slightly denser */
+}
+
+/* Read more / read less functionality */
+
 .more-text {
   display: none;
 }
