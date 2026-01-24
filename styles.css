@@ -198,7 +198,10 @@ body {
   background: rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  padding: 24px;
+  padding: 10px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: 0;
   color: #fff;
   opacity: 0;
   animation: fadeInUp 0.4s ease forwards;
