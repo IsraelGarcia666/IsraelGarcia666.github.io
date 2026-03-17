@@ -55,6 +55,80 @@ body {
 }
 
 /* =========================
+   SECTION TITLE BOX
+========================= */
+.section-title-box {
+  display: block; /* change from inline-block */
+  width: fit-content;
+  margin: 0 auto 50px auto; /* centers horizontally */
+  padding: 16px 32px; /* more breathing */
+
+  background: rgba(14, 14, 14, 0.5);
+  border: 1px solid rgba(6, 164, 59, 0.4);
+  border-radius: 10px;
+
+  text-align: center; /* THIS centers the text */
+}
+
+.section-title-box h2 {
+  color: #f3ab24; /* Font color */
+}
+
+/* =========================
+   COURSE CARD
+========================= */
+.course-card {
+  background: rgba(18, 17, 17, 0.6); /* transparency */
+  border: 1px solid rgba(0, 255, 100, 0.2);
+  border-radius: 12px;
+
+  padding: 1.5rem;
+  position: relative;
+
+  transition: all 0.3s ease;
+}
+
+.course-card p {
+  color: #dddddd;
+}
+
+/* Hover effect */
+.course-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 100, 0.6);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
+}
+
+/* Top green line accent */
+.course-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+}
+
+/* =========================
+   COURSE TITLE BOX
+========================= */
+.course-title {
+  display: inline-block;
+
+  padding: 6px 12px;
+  margin-bottom: 12px;
+
+  background: rgba(13, 13, 13, 0.2);
+  border: 1px solid rgba(14, 15, 14, 0);
+  border-radius: 2px;
+  color: #11b502;
+  font-weight: 600;
+}
+
+/* =========================
    SECTION CARDS
    ========================= */
 
