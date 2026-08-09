@@ -40,17 +40,28 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto d-flex gap-md-3">
         <li class="nav-item">
-          <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#hobbies" data-i18n="navHobbies">Hobbies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills" data-i18n="navSkills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
-        </li>
+  <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#courses" data-i18n="navCourses">Courses</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#skills" data-i18n="navSkills">Skills</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#projects" data-i18n="navProjects">Projects</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+</li>
       </ul>
 
       <!-- Language buttons -->
@@ -97,10 +108,10 @@
 
     <!-- Buttons -->
     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
-      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="aboutBtnPrimary"></a>
-      <a href="#contact" class="btn btn-outline-secondary btn-sm" data-i18n="aboutBtnSecondary"></a>
-    </div>
-  </div>
+  <a href="#projects" class="btn btn-primary btn-sm" data-i18n="aboutBtnPrimary"></a>
+  <a href="#contact" class="btn btn-outline-secondary btn-sm" data-i18n="aboutBtnSecondary"></a>
+</div>
+</div>
 
   <!-- RIGHT: Image -->
   <div class="col-12 col-sm-5 col-lg-4 text-center mt-4 mt-sm-0">
@@ -126,6 +137,18 @@
   </div>
 
   <div class="row g-4">
+
+    <!-- Python -->
+<div class="col-md-6">
+  <div class="course-card h-100">
+    <h5 class="course-title" data-i18n="coursePythonTitle">
+      Programming with Python
+    </h5>
+    <p data-i18n="coursePythonText">
+      Python programming fundamentals and practical projects
+    </p>
+  </div>
+</div>
 
     <!-- SQL -->
     <div class="col-md-6">
@@ -175,6 +198,18 @@
       </div>
     </div>
 
+    <!-- ICT Infrastructure & Cloud -->
+<div class="col-md-6">
+  <div class="course-card h-100">
+    <h5 class="course-title" data-i18n="courseCloudTitle">
+      ICT Infrastructure & Cloud
+    </h5>
+    <p data-i18n="courseCloudText">
+      ICT infrastructure and cloud fundamentals
+    </p>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -223,142 +258,281 @@
   <div class="col-12 col-lg-10 mx-auto">
     <div class="section-card p-4">
 
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
         <h2 class="fw-bold mb-0" data-i18n="skillsTitle"></h2>
         <span class="badge rounded-pill text-bg-primary" data-i18n="skillsBadge"></span>
       </div>
 
       <div class="row g-3 align-items-stretch">
-        <!-- Front-end -->
-        <div class="col-12 col-md-4">
-          <div class="card h-100 ">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title d-flex align-items-center gap-2">
-                <i class="bi bi-code-slash"></i>
-                <span data-i18n="skillsCard1Title"></span>
-              </h5>
 
-              <p class="card-text text-muted" data-i18n="skillsCard1Text"></p>
-
-        <!-- Skill logos -->
-<div class="d-flex justify-content-center gap-4 mb-3">
-  <img src="html-logo2.png" alt="HTML" class="skill-logo">
-  <img src="css_logo.png" alt="Css" class="skill-logo">
-  <img src="bootstrap-logo.png" alt="Bootstrap" class="skill-logo">
-</div>
-         <!-- Skill levels -->
-              <div class="mb-2">
-                <div class="d-flex justify-content-between">
-                  <small>HTML</small><small>100%</small>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 100%"></div>
-                </div>
-              </div>
-
-              <div class="mb-2">
-                <div class="d-flex justify-content-between">
-                  <small>CSS</small><small>100%</small>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 100%"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="d-flex justify-content-between">
-                  <small>Bootstrap</small><small>75%</small>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 75%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="col-12 col-md-4">
+        <!-- Programming -->
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title" data-i18n="skillsCard2Title"></h5>
-              <p class="card-text text-muted" data-i18n="skillsCard2Text"></p>
-        
-              <!-- Tools Logos -->
-<div class="d-flex justify-content-center gap-4 mb-3">
-  <img src="github-logo.png" alt="Github" class="skill-logo">
-  <img src="visual-studio-logo.png" alt="Visual Studio" class="skill-logo">
-</div>
 
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge text-bg-secondary">GitHub</span>
-                <span class="badge text-bg-secondary">VS Code</span>
-                <span class="badge text-bg-secondary">Git</span>
-                <span class="badge text-bg-secondary">Markdown</span>
+              <h5 class="card-title" data-i18n="skillsProgrammingTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsProgrammingText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3">
+                <img src="python-logo.png"
+                     alt="Python"
+                     class="skill-logo logo-large">
               </div>
+
             </div>
           </div>
         </div>
 
-        <!-- Cloud / Platforms -->
-        <div class="col-12 col-md-4">
+
+        <!-- Databases -->
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title" data-i18n="skillsCard3Title"></h5>
-              <p class="card-text text-muted" data-i18n="skillsCard3Text"></p>
-        
-              <!-- Cloud / Platforms Logos -->
-<div class="d-flex justify-content-center gap-4 mb-3">
-  <img src="azure-logo.png" alt="Azure" class="skill-logo">
-  <img src="github-mark-white.png" alt="Visual Studio" class="skill-logo">
-</div>
 
-              <div class="mb-2">
-                <div class="d-flex justify-content-between">
-                  <small>Azure (basic)</small><small>40%</small>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 40%"></div>
-                </div>
+              <h5 class="card-title" data-i18n="skillsDatabaseTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsDatabaseText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3">
+                <img src="mysql-logo.png"
+                     alt="MySQL"
+                     class="skill-logo logo-small">
+
+                <img src="heidisql-logo.png"
+                     alt="HeidiSQL"
+                     class="skill-logo">
               </div>
 
-              <div class="mb-2">
-                <div class="d-flex justify-content-between">
-                  <small>Repos / Version control</small><small>70%</small>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-              </div>
-
-              <div class="alert alert-secondary mt-3 mb-0" role="alert" data-i18n="skillsNote"></div>
             </div>
           </div>
         </div>
-      </div>
 
-<!-- Creative & Media Tools -->
-<div class="col-12 col-md-4">
-  <div class="card h-100">
-    <div class="card-body d-flex flex-column">
-      <h5 class="card-title d-flex align-items-center gap-2">
-        <img src="cubase-icon.jpg" alt="Cubase" class="skill-logo">
-        <img src="Guitar_Pro-icon.png" alt="Guitar Pro" class="skill-logo">
-        <img src="NCH-logo.png" alt="NCH" class="skill-logo">
-        <img src="videoPad-logo.jpg" alt="VideoPad" class="skill-logo">
-        <span data-i18n="skillsCard4Title"></span>
-      </h5>
 
-      <p class="card-text text-muted" data-i18n="skillsCard4Text"></p>
+        <!-- Web Development -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
 
-      <div class="mt-auto d-flex flex-wrap gap-2">
-        <span class="badge text-bg-secondary">Audio editing</span>
-        <span class="badge text-bg-secondary">MIDI</span>
-        <span class="badge text-bg-secondary">Arrangement</span>
+              <h5 class="card-title" data-i18n="skillsWebTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsWebText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3 flex-wrap">
+                <img src="html-logo2.png"
+                     alt="HTML"
+                     class="skill-logo">
+
+                <img src="css_logo.png"
+                     alt="CSS"
+                     class="skill-logo">
+
+                <img src="bootstrap-logo.png"
+                     alt="Bootstrap"
+                     class="skill-logo">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Networks & Systems -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title" data-i18n="skillsNetworkTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsNetworkText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3 flex-wrap">
+                <img src="linux-logo.jpg"
+                     alt="Linux"
+                     class="skill-logo logo-small">
+
+                <img src="cisco-logo.jpg"
+                     alt="Cisco"
+                     class="skill-logo logo-small">
+
+                <img src="wireshark-logo.png"
+                     alt="Wireshark"
+                     class="skill-logo">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Development Tools & Platforms -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title" data-i18n="skillsToolsTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsToolsText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3 flex-wrap">
+                <img src="github-logo.png"
+                     alt="GitHub"
+                     class="skill-logo">
+
+                <img src="visual-studio-logo.png"
+                     alt="Visual Studio Code"
+                     class="skill-logo">
+
+                <img src="azure-logo.png"
+                     alt="Microsoft Azure"
+                     class="skill-logo">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Creative & Media -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title" data-i18n="skillsCreativeTitle"></h5>
+
+              <p class="card-text text-muted"
+                 data-i18n="skillsCreativeText"></p>
+
+              <div class="mt-auto d-flex justify-content-center gap-3 flex-wrap">
+                <img src="cubase-icon.jpg"
+                     alt="Cubase"
+                     class="skill-logo">
+
+                <img src="Guitar_Pro-icon.png"
+                     alt="Guitar Pro"
+                     class="skill-logo">
+
+                <img src="NCH-logo.png"
+                     alt="NCH Software"
+                     class="skill-logo">
+
+                <img src="videoPad-logo.jpg"
+                     alt="VideoPad"
+                     class="skill-logo">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
+
+<!-- =========================
+     PROJECTS
+========================== -->
+<section id="projects" class="container my-5">
+
+  <div class="section-title-box text-center mb-4">
+    <h2 data-i18n="projectsTitle">Projects</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- EV Charging Optimizer -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card h-100 d-flex flex-column">
+
+        <h5 class="project-title" data-i18n="projectEvTitle">
+          EV Charging Optimizer
+        </h5>
+
+        <p data-i18n="projectEvText">
+          Python-based EV charging optimization project.
+        </p>
+
+        <p class="project-tech">
+          Python • Streamlit • Excel
+        </p>
+
+        <div class="mt-auto pt-3">
+  <a href="https://github.com/IsraelGarcia666/EV-Charging-Optimizer"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="btn btn-outline-success btn-sm"
+     data-i18n="projectGithubBtn">
+    View on GitHub
+  </a>
+</div>
+
+      </div>
+    </div>
+
+
+    <!-- Database Project -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card h-100 d-flex flex-column">
+
+        <h5 class="project-title" data-i18n="projectDbTitle">
+          Music Gigs Database
+        </h5>
+
+        <p data-i18n="projectDbText">
+          Relational database design and SQL project.
+        </p>
+
+        <p class="project-tech">
+          SQL • MySQL • HeidiSQL
+        </p>
+
+        <div class="mt-auto pt-3">
+  <span class="project-status" data-i18n="projectAcademicStatus">
+    Collaborative academic project
+  </span>
+</div>
+
+      </div>
+    </div>
+
+
+    <!-- Web Development -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card h-100 d-flex flex-column">
+
+        <h5 class="project-title" data-i18n="projectWebTitle">
+          Web Development Projects
+        </h5>
+
+        <p data-i18n="projectWebText">
+          Responsive and multilingual web development projects.
+        </p>
+
+        <p class="project-tech">
+          HTML • CSS • Bootstrap • JavaScript • GitHub
+        </p>
+
+        <div class="mt-auto pt-3">
+  <a href="https://github.com/IsraelGarcia666/guillermo-jacome_website"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="btn btn-outline-success btn-sm"
+     data-i18n="projectGithubBtn">
+    View on GitHub
+  </a>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- TESTIMONIALS SECTION -->
 <div class="row mb-5" id="testimonials">
@@ -690,13 +864,16 @@
   const translations = {
     en: {
   title: "Israel Garcia — IT & Logistics Portfolio",
-  subtitle: "Business Information Technology student (Digital Services) • Pharmaceutical Logistics Center Operations • HTML, CSS & Bootstrap projects",
+  subtitle: "Business Information Technology student (Digital Services) • IT & Digital Projects • 11 Years of Pharmaceutical Logistics Experience",
   aboutTitle: "About Me",
- aboutP1: "I work in operations at Tamro Oyj’s Pharmaceutical Logistics Center and I am studying Business Information Technology with a specialization in Digital Services at Laurea University of Applied Sciences. During my studies, I have learned to build web projects using HTML, CSS, and Bootstrap, and I practice version control by creating repositories on GitHub. I work with development tools such as Visual Studio Code and have basic experience with cloud and server platforms, including Azure.",
-aboutP2: "Before moving into logistics and IT, my professional background was in anthropological and archival research. I worked on research projects for Arkamax S.A. de C.V. in collaboration with Banco de México, as well as with the Institute of Historical Studies Carlos Sigüenza y Góngora and the National Archives of Mexico (AGN). My work focused on the identification, classification, diagnosis, and organization of historical archives.",
-aboutP3: "This background strengthened my analytical skills, attention to detail, and structured approach to information — skills that I now apply in logistics operations, IT studies, and digital projects. I am particularly interested in roles connected to Health Technology Services, and I have supported teams during periods of high workload. Earlier in my career, I also gained Finnish customer service experience while working at Sokos Hotel.",
+ aboutP1: "I am studying Business Information Technology with a specialization in Digital Services at Laurea University of Applied Sciences. My current focus is on developing practical IT skills through programming and hands-on projects. I have been learning Python and applying it in projects such as an EV Charging Optimizer, while also developing skills in SQL and databases, networking, Linux, and web development with HTML, CSS, Bootstrap, and JavaScript. I use Git and GitHub for version control and project development.",
+aboutP2: "Before focusing on IT, I worked for 11 years at Tamro Oyj in pharmaceutical logistics operations. My responsibilities included incoming shipment inspection, product registration in JD Edwards EnterpriseOne, documentation and archiving, shelving, packaging, and internal logistics. This experience gave me a strong understanding of structured processes, accuracy, operational environments, and the importance of reliable information systems in everyday business operations.",
+aboutP3: "Earlier in my career, my professional background was in anthropological and archival research in Mexico, including research projects connected with Banco de México and the National Archives of Mexico (AGN). Across research, pharmaceutical logistics, and now IT, I have developed a systematic and analytical approach to solving problems and working with information. My goal is to combine this professional experience with my growing technical skills in roles involving IT, digital services, health technology, or technology-supported operations.",
 
 coursesTitle: "Courses & Practical Learning",
+
+coursePythonTitle: "Programming with Python",
+coursePythonText: "Developed Python programming fundamentals through practical exercises using conditions, loops, lists, functions, and problem-solving. Applied this learning in projects such as the EV Charging Optimizer.",
 
 courseSqlTitle: "Database Design & SQL",
 courseSqlText: "Designed relational databases and applied SQL queries (JOIN, GROUP BY, constraints) in a practical Artist–Fan platform project.",
@@ -710,6 +887,9 @@ courseLinuxText: "Worked with Linux command line and system configuration. Examp
 courseWebTitle: "Web Development",
 courseWebText: "Built responsive websites using HTML, CSS, and Bootstrap. Example: Developed a multilingual portfolio with dark theme.",
 
+courseCloudTitle: "ICT Infrastructure & Cloud",
+courseCloudText: "Learned the fundamentals of ICT infrastructure, cloud services, and client-server environments, including basic experience with Microsoft Azure.",
+
 hobbiesTitle: "Hobbies",
 hobbyMusicTitle: "Music",
 hobbyMusicItem1: "Classical guitar & classical music (Instituto Nacional de Bellas Artes, 1993–1997)",
@@ -720,16 +900,39 @@ hobbySportsItem1: "Football",
 hobbySportsItem2: "Cycling",
 
 skillsTitle: "Skills",
-skillsBadge: "Bootstrap 5 + Custom CSS",
-skillsCard1Title: "Front-end Development",
-skillsCard1Text: "Completed HTML and CSS courses on Codecademy. Building responsive layouts using HTML, CSS, and Bootstrap, with practical projects developed during the current academic year.",
-skillsCard2Title: "Tools",
-skillsCard2Text: "Daily workflow tools for coding, version control, and documentation.",
-skillsCard3Title: "Cloud & Platforms",
-skillsCard3Text: "Basic experience with cloud platforms and repository-based development.",
-skillsNote: "Note: Levels are self-assessed and based on current coursework and projects.",
-skillsCard4Title: "Creative & Media Tools",
-skillsCard4Text: "Use of creative software for music and basic media production. Experience with Guitar Pro for music notation and practice, Cubase for basic music production using MIDI tracks (e.g., drums and bass), and NCH software for basic video editing and media processing.",
+skillsBadge: "Technical & Practical Skills",
+
+skillsProgrammingTitle: "Programming",
+skillsProgrammingText: "Developing Python programming skills through coursework, problem-solving exercises, and practical projects such as the EV Charging Optimizer.",
+
+skillsDatabaseTitle: "Databases",
+skillsDatabaseText: "Practical experience with relational database design and SQL using MySQL and HeidiSQL, including JOIN, GROUP BY, constraints, and database relationships.",
+
+skillsWebTitle: "Web Development",
+skillsWebText: "Building responsive and multilingual websites using HTML, CSS, Bootstrap, and basic JavaScript, with projects published through GitHub Pages.",
+
+skillsNetworkTitle: "Networks & Systems",
+skillsNetworkText: "Hands-on coursework with Linux, Cisco Packet Tracer, Wireshark, IP addressing, DHCP, connectivity testing, command-line tools, and basic firewall configuration with UFW.",
+
+skillsToolsTitle: "Development Tools & Platforms",
+skillsToolsText: "Using Git, GitHub, Visual Studio Code, and Markdown for development, version control, and documentation, with basic experience in Microsoft Azure.",
+
+skillsCreativeTitle: "Creative & Media Tools",
+skillsCreativeText: "Experience with Cubase and Guitar Pro for music production, MIDI, notation, and arrangement, as well as NCH and VideoPad for basic video and media editing.",
+
+projectsTitle: "Projects",
+
+projectEvTitle: "EV Charging Optimizer",
+projectEvText: "Developed a practical tool to support EV charging decisions using electricity spot prices, distribution costs, solar production, and charging demand. The project evolved from an Excel model into a Python and Streamlit application.",
+
+projectDbTitle: "Music Gigs Database",
+projectDbText: "Co-developed a relational database for a music gigs and fan application as a class project. The project included related tables for artists, venues, gigs, songs, setlists, merchandise, and orders, with SQL queries for retrieving and analyzing data.",
+
+projectWebTitle: "Web Development Projects",
+projectWebText: "Designed and developed responsive websites using HTML, CSS, Bootstrap, and JavaScript, including multilingual functionality, responsive layouts, Git version control, and deployment through GitHub Pages.",
+
+projectGithubBtn: "View on GitHub",
+projectAcademicStatus: "Collaborative academic project",
 
 testimonialsTitle: "Testimonials",
 testimonialsBadge: "Feedback",
@@ -777,23 +980,25 @@ contactEmailPersonal: "Personal email",
 footerTagline: "Portfolio website created for academic and professional purposes. Background images courtesy of Unsplash, Pexels, Pixabay, and AI-generated content.",
 
 
-  aboutBtnPrimary: "Request a Quote",
+  aboutBtnPrimary: "View Projects",
   aboutBtnSecondary: "Contact me",
   navBrand: "Israel G.",
 navHome: "Home",
 navAbout: "About",
+navCourses: "Courses",
 navSkills: "Skills",
+navProjects: "Projects",
 navHobbies: "Hobbies",
 navContact: "Contact",
 
 },
 fi: {
   title: "Israel Garcia — IT- ja Logistiikkaportfolio",
-  subtitle: "Business Information Technology (Tradenomi) -opiskelija (Digital Services) • Lääkelogistiikkakeskuksen operaatiot • HTML-, CSS- ja Bootstrap-projektit",
+  subtitle: "Business Information Technology (Tradenomi) -opiskelija (Digital Services) • IT- ja digitaaliset projektit • 11 vuoden kokemus lääkelogistiikasta",
   aboutTitle: "Minusta",
- aboutP1: "Työskentelen operatiivisissa tehtävissä Tamro Oyj:n lääketeollisuuden logistiikkakeskuksessa ja opiskelen Business Information Technology -koulutusohjelmassa digitaalisten palveluiden erikoistumislinjalla Laurea-ammattikorkeakoulussa. Opintojeni aikana olen oppinut rakentamaan verkkoprojekteja HTML:n, CSS:n ja Bootstrapin avulla sekä harjoitellut versionhallintaa luomalla repositorioita GitHubissa. Käytän kehitystyökaluja, kuten Visual Studio Codea, ja minulla on perustason osaamista pilvi- ja palvelinympäristöistä, mukaan lukien Azure.",
-aboutP2: "Ennen siirtymistä logistiikan ja IT:n pariin ammatillinen taustani oli antropologisessa ja arkistotutkimuksessa. Työskentelin tutkimushankkeissa Arkamax S.A. de C.V.:ssä yhteistyössä Banco de Méxicon kanssa sekä Instituto de Investigaciones Históricas Carlos Sigüenza y Góngoran ja Meksikon kansallisarkiston (AGN) kanssa. Työni keskittyi historiallisten arkistojen tunnistamiseen, luokitteluun, analysointiin ja organisointiin.",
-aboutP3: "Tämä tausta vahvisti analyyttisiä taitojani, huolellisuutta sekä systemaattista lähestymistapaa tiedon käsittelyyn — taitoja, joita hyödynnän nykyisin logistiikkatoiminnoissa, IT-opinnoissa ja digitaalisissa projekteissa. Olen erityisen kiinnostunut Health Technology Services -alaan liittyvistä rooleista ja olen tukenut tiimejä korkean työkuorman aikana. Aiemmin urallani kartutin myös suomalaista asiakaspalvelukokemusta työskennellessäni Sokos-hotellissa."
+ aboutP1: "Opiskelen Business Information Technology -koulutusohjelmassa digitaalisten palveluiden erikoistumislinjalla Laurea-ammattikorkeakoulussa. Keskityn tällä hetkellä käytännön IT-taitojen kehittämiseen ohjelmoinnin ja käytännön projektien kautta. Olen opiskellut Pythonia ja soveltanut sitä projekteissa, kuten EV Charging Optimizer -sovelluksessa. Kehitän myös osaamistani SQL:ssä ja tietokannoissa, tietoverkoissa, Linuxissa sekä web-kehityksessä HTML:n, CSS:n, Bootstrapin ja JavaScriptin avulla. Käytän Gitiä ja GitHubia versionhallintaan ja projektien kehittämiseen.",
+aboutP2: "Ennen keskittymistä IT-alaan työskentelin 11 vuotta Tamro Oyj:ssä lääkelogistiikan operatiivisissa tehtävissä. Työtehtäviini kuuluivat saapuvien toimitusten tarkastus, tuotteiden rekisteröinti JD Edwards EnterpriseOne -järjestelmään, dokumentointi ja arkistointi, hyllytys, pakkaaminen sekä sisäinen logistiikka. Tämä kokemus antoi minulle vahvan ymmärryksen järjestelmällisistä prosesseista, tarkkuudesta, operatiivisista ympäristöistä ja luotettavien tietojärjestelmien merkityksestä päivittäisessä liiketoiminnassa.",
+aboutP3: "Aiemmin urallani ammatillinen taustani oli antropologisessa ja arkistotutkimuksessa Meksikossa, mukaan lukien tutkimushankkeet, jotka liittyivät Banco de Méxicoon ja Meksikon kansallisarkistoon (AGN). Tutkimuksen, lääkelogistiikan ja nykyisten IT-opintojeni kautta olen kehittänyt systemaattisen ja analyyttisen lähestymistavan ongelmanratkaisuun ja tiedon käsittelyyn. Tavoitteeni on yhdistää tämä työkokemus kehittyviin teknisiin taitoihini IT:n, digitaalisten palveluiden, terveysteknologian tai teknologiaa hyödyntävien operatiivisten tehtävien parissa."
 ,
 
 hobbiesTitle: "Harrastukset",
@@ -807,6 +1012,9 @@ hobbySportsItem2: "Pyöräily",
 
 coursesTitle: "Kurssit ja käytännön oppiminen",
 
+coursePythonTitle: "Ohjelmointi Pythonilla",
+coursePythonText: "Kehitin Python-ohjelmoinnin perusteita käytännön harjoituksissa käyttäen ehtolauseita, silmukoita, listoja ja funktioita sekä harjoittelemalla ongelmanratkaisua. Sovelsin oppimaani projekteissa, kuten EV Charging Optimizer -sovelluksessa.",
+
 courseSqlTitle: "Tietokantojen suunnittelu ja SQL",
 courseSqlText: "Suunnittelin relaatiotietokantoja ja käytin SQL-kyselyitä (JOIN, GROUP BY, rajoitteet) käytännön Artist–Fan -projektissa.",
 
@@ -819,17 +1027,43 @@ courseLinuxText: "Työskentelin Linuxin komentorivillä ja järjestelmän asetus
 courseWebTitle: "Web-kehitys",
 courseWebText: "Rakensin responsiivisia verkkosivustoja HTML:llä, CSS:llä ja Bootstrapilla. Esimerkki: monikielinen portfolio tummalla teemalla.",
 
+courseCloudTitle: "ICT-infrastruktuuri ja pilvipalvelut",
+courseCloudText: "Opiskelin ICT-infrastruktuurin, pilvipalveluiden ja asiakas-palvelinympäristöjen perusteita sekä sain perustason kokemusta Microsoft Azuresta.",
+
 skillsTitle: "Osaaminen",
-skillsBadge: "Bootstrap 5 + oma CSS",
-skillsCard1Title: "Front-end-kehitys",
-skillsCard1Text: "Suorittanut HTML- ja CSS-kursseja Codecademyssa. Rakensin responsiivisia ulkoasuja HTML:n, CSS:n ja Bootstrapin avulla, ja käytännön projekteja kehitin kuluvan lukuvuoden aikana.",
-skillsCard2Title: "Työkalut",
-skillsCard2Text: "Päivittäiset työkalut koodaukseen, versionhallintaan ja dokumentointiin.",
-skillsCard3Title: "Pilvi & alustat",
-skillsCard3Text: "Peruskokemusta pilvipalveluista ja repositoriopohjaisesta kehityksestä.",
-skillsNote: "Huom: Tasot ovat oma arvio ja perustuvat nykyisiin opintoihin ja projekteihin.",
-skillsCard4Title: "Luovat ja mediatyökalut",
-skillsCard4Text: "Luovien ohjelmistojen käyttö musiikin ja perusmediasisällön tuottamiseen. Kokemusta Guitar Prosta musiikin nuotinnukseen ja harjoitteluun, Cubasesta perusmusiikkituotantoon MIDI-raitojen (esim. rummut ja basso) avulla sekä NCH-ohjelmistoista perusvideonmuokkaukseen ja median käsittelyyn.",
+skillsBadge: "Tekniset ja käytännön taidot",
+
+skillsProgrammingTitle: "Ohjelmointi",
+skillsProgrammingText: "Kehitän Python-ohjelmointitaitojani opintojen, ongelmanratkaisuharjoitusten ja käytännön projektien, kuten EV Charging Optimizer -sovelluksen, avulla.",
+
+skillsDatabaseTitle: "Tietokannat",
+skillsDatabaseText: "Käytännön kokemusta relaatiotietokantojen suunnittelusta ja SQL:n käytöstä MySQL:n ja HeidiSQL:n avulla, mukaan lukien JOIN, GROUP BY, rajoitteet ja tietokantojen väliset suhteet.",
+
+skillsWebTitle: "Web-kehitys",
+skillsWebText: "Responsiivisten ja monikielisten verkkosivustojen rakentaminen HTML:n, CSS:n, Bootstrapin ja JavaScriptin perusteiden avulla sekä projektien julkaiseminen GitHub Pagesissa.",
+
+skillsNetworkTitle: "Tietoverkot ja järjestelmät",
+skillsNetworkText: "Käytännön harjoituksia Linuxilla, Cisco Packet Tracerilla ja Wiresharkilla sekä IP-osoitteiden, DHCP:n, verkkoyhteyksien testauksen, komentorivityökalujen ja UFW-palomuurin perusteiden parissa.",
+
+skillsToolsTitle: "Kehitystyökalut ja alustat",
+skillsToolsText: "Git-, GitHub-, Visual Studio Code- ja Markdown-työkalujen käyttö kehityksessä, versionhallinnassa ja dokumentoinnissa sekä perustason kokemus Microsoft Azuresta.",
+
+skillsCreativeTitle: "Luovat ja mediatyökalut",
+skillsCreativeText: "Kokemusta Cubasen ja Guitar Pron käytöstä musiikkituotannossa, MIDI-työskentelyssä, nuotinnuksessa ja sovittamisessa sekä NCH:n ja VideoPadin käytöstä videoiden ja median perusmuokkauksessa.",
+
+projectsTitle: "Projektit",
+
+projectEvTitle: "EV Charging Optimizer",
+projectEvText: "Kehitin käytännön työkalun sähköauton latauspäätösten tueksi hyödyntäen sähkön spot-hintoja, siirtokustannuksia, aurinkosähkön tuotantoa ja lataustarvetta. Projekti kehittyi Excel-mallista Pythonilla ja Streamlitilla toteutetuksi sovellukseksi.",
+
+projectDbTitle: "Music Gigs -tietokanta",
+projectDbText: "Kehitin yhdessä opiskelukaverini kanssa relaatiotietokannan musiikkitapahtuma- ja fanisovellusta varten osana kurssiprojektia. Projekti sisälsi toisiinsa liittyviä tauluja artisteille, tapahtumapaikoille, keikoille, kappaleille, settilistoille, tuotteille ja tilauksille sekä SQL-kyselyitä tiedon hakemiseen ja analysointiin.",
+
+projectWebTitle: "Web-kehitysprojektit",
+projectWebText: "Suunnittelin ja kehitin responsiivisia verkkosivustoja HTML:n, CSS:n, Bootstrapin ja JavaScriptin avulla. Projekteihin sisältyy monikielisiä toimintoja, responsiivisia käyttöliittymiä, Git-versionhallintaa ja julkaisemista GitHub Pagesissa.",
+
+projectGithubBtn: "Näytä GitHubissa",
+projectAcademicStatus: "Yhteistyönä toteutettu opiskeluprojekti",
 
 testimonialsTitle: "Suositukset",
 testimonialsBadge: "Palaute",
@@ -876,23 +1110,25 @@ contactEmailSchool: "Opiskelijasähköposti (Laurea UAS)",
 contactEmailPersonal: "Henkilökohtainen sähköposti",
 footerTagline: "Akateemisiin ja ammatillisiin tarkoituksiin luotu portfoliosivusto. Taustakuvat Unsplashilta, Pexelsiltä, ​​Pixabaylta ja tekoälyn luomalta sisällöltä.",
 
-  aboutBtnPrimary: "Pyydä tarjous",
+  aboutBtnPrimary: "Näytä projektit",
   aboutBtnSecondary: "Ota yhteyttä",
   navBrand: "Israel G.",
 navHome: "Koti",
 navAbout: "Minusta",
-navSkills: "Taidot",
+navCourses: "Kurssit",
+navSkills: "Osaaminen",
+navProjects: "Projektit",
 navHobbies: "Harrastukset",
 navContact: "Yhteystiedot",
 },
 
 es: {
 title: "Israel Garcia — Portafolio de IT y Logística",
-subtitle: "Estudiante de Tecnologías de la Información Empresarial (Servicios Digitales) • Operaciones en Centro de Logística Farmacéutica • Proyectos en HTML, CSS y Bootstrap",
+subtitle: "Estudiante de Business Information Technology (Digital Services) • Proyectos de IT y Servicios Digitales • 11 años de experiencia en logística farmacéutica",
 aboutTitle: "Sobre mí",
-aboutP1: "Trabajo en operaciones en el Centro de Logística Farmacéutica de Tamro Oyj y actualmente estudio Business Information Technology con especialización en Digital Services en la Universidad de Ciencias Aplicadas Laurea. Durante mis estudios he aprendido a desarrollar proyectos web utilizando HTML, CSS y Bootstrap, y practico control de versiones mediante la creación de repositorios en GitHub. Trabajo con herramientas de desarrollo como Visual Studio Code y tengo experiencia básica en plataformas de nube y servidores, incluyendo Azure.",
-aboutP2: "Antes de incorporarme al ámbito de la logística y la tecnología de la información, mi trayectoria profesional estuvo vinculada a la investigación antropológica y archivística. Participé en proyectos de investigación en Arkamax S.A. de C.V. en colaboración con el Banco de México, así como con el Instituto de Investigaciones Históricas Carlos Sigüenza y Góngora y el Archivo General de la Nación (AGN). Mi trabajo se centró en la identificación, clasificación, diagnóstico y organización de archivos históricos.",
-aboutP3: "Esta experiencia fortaleció mis habilidades analíticas, la atención al detalle y un enfoque estructurado en el manejo de la información — competencias que actualmente aplico en operaciones logísticas, estudios en IT y proyectos digitales. Estoy particularmente interesado en roles relacionados con Health Technology Services y he apoyado a equipos durante períodos de alta carga laboral. En una etapa anterior de mi carrera, también adquirí experiencia en atención al cliente en Finlandia trabajando en Sokos Hotel."
+aboutP1: "Estudio Business Information Technology con especialización en Digital Services en la Universidad de Ciencias Aplicadas Laurea. Actualmente me enfoco en desarrollar habilidades prácticas de IT mediante la programación y proyectos prácticos. He estado aprendiendo Python y aplicándolo en proyectos como EV Charging Optimizer. También estoy desarrollando mis conocimientos de SQL y bases de datos, redes, Linux y desarrollo web con HTML, CSS, Bootstrap y JavaScript. Utilizo Git y GitHub para el control de versiones y el desarrollo de proyectos.",
+aboutP2: "Antes de enfocarme en IT, trabajé durante 11 años en Tamro Oyj en operaciones de logística farmacéutica. Mis responsabilidades incluían la inspección de mercancía entrante, el registro de productos en JD Edwards EnterpriseOne, documentación y archivo, almacenamiento, embalaje y logística interna. Esta experiencia me proporcionó una sólida comprensión de los procesos estructurados, la precisión, los entornos operativos y la importancia de sistemas de información fiables en las operaciones diarias de una empresa.",
+aboutP3: "Anteriormente, mi trayectoria profesional estuvo vinculada a la investigación antropológica y archivística en México, incluyendo proyectos de investigación relacionados con el Banco de México y el Archivo General de la Nación (AGN). A través de la investigación, la logística farmacéutica y ahora mis estudios de IT, he desarrollado un enfoque sistemático y analítico para resolver problemas y trabajar con información. Mi objetivo es combinar esta experiencia profesional con mis crecientes habilidades técnicas en puestos relacionados con IT, servicios digitales, tecnología de la salud u operaciones apoyadas por tecnología."
 ,
 
 hobbiesTitle: "Hobbies",
@@ -906,6 +1142,9 @@ hobbySportsItem2: "Ciclismo",
 
 coursesTitle: "Cursos y Aprendizaje Práctico",
 
+coursePythonTitle: "Programación con Python",
+coursePythonText: "Desarrollé fundamentos de programación con Python mediante ejercicios prácticos utilizando condicionales, bucles, listas y funciones, además de practicar la resolución de problemas. Apliqué estos conocimientos en proyectos como EV Charging Optimizer.",
+
 courseSqlTitle: "Diseño de Bases de Datos y SQL",
 courseSqlText: "Diseño de bases de datos relacionales y uso de consultas SQL (JOIN, GROUP BY, constraints) en un proyecto de plataforma artista-fan.",
 
@@ -918,17 +1157,43 @@ courseLinuxText: "Uso de línea de comandos y configuración del sistema. Ejempl
 courseWebTitle: "Desarrollo Web",
 courseWebText: "Creación de sitios web responsivos con HTML, CSS y Bootstrap. Ejemplo: portafolio multilenguaje con tema oscuro.",
 
+courseCloudTitle: "Infraestructura TIC y Servicios en la Nube",
+courseCloudText: "Aprendí los fundamentos de infraestructura TIC, servicios en la nube y entornos cliente-servidor, incluyendo experiencia básica con Microsoft Azure.",
+
 skillsTitle: "Habilidades",
-skillsBadge: "Bootstrap 5 + CSS personalizado",
-skillsCard1Title: "Desarrollo Front-end",
-skillsCard1Text: "Cursos de HTML y CSS completados en Codecademy. Desarrollo de interfaces responsivas con HTML, CSS y Bootstrap a través de proyectos académicos.",
-skillsCard2Title: "Herramientas",
-skillsCard2Text: "Herramientas diarias para programar, controlar versiones y documentar.",
-skillsCard3Title: "Nube y plataformas",
-skillsCard3Text: "Experiencia básica con plataformas en la nube y desarrollo con repositorios.",
-skillsNote: "Nota: Niveles autoevaluados según los cursos y proyectos actuales.",
-skillsCard4Title: "Herramientas creativas y multimedia",
-skillsCard4Text: "Uso de software creativo para producción musical y multimedia básica. Experiencia con Guitar Pro para notación y práctica musical, Cubase para producción musical básica mediante pistas MIDI (por ejemplo, batería y bajo), y software NCH para edición básica de video y procesamiento multimedia.",
+skillsBadge: "Habilidades técnicas y prácticas",
+
+skillsProgrammingTitle: "Programación",
+skillsProgrammingText: "Desarrollo mis conocimientos de programación con Python mediante estudios, ejercicios de resolución de problemas y proyectos prácticos como EV Charging Optimizer.",
+
+skillsDatabaseTitle: "Bases de Datos",
+skillsDatabaseText: "Experiencia práctica en el diseño de bases de datos relacionales y SQL utilizando MySQL y HeidiSQL, incluyendo JOIN, GROUP BY, constraints y relaciones entre tablas.",
+
+skillsWebTitle: "Desarrollo Web",
+skillsWebText: "Desarrollo de sitios web responsivos y multilingües utilizando HTML, CSS, Bootstrap y JavaScript básico, con proyectos publicados mediante GitHub Pages.",
+
+skillsNetworkTitle: "Redes y Sistemas",
+skillsNetworkText: "Prácticas con Linux, Cisco Packet Tracer y Wireshark, incluyendo direccionamiento IP, DHCP, pruebas de conectividad, herramientas de línea de comandos y configuración básica de firewall con UFW.",
+
+skillsToolsTitle: "Herramientas y Plataformas de Desarrollo",
+skillsToolsText: "Uso de Git, GitHub, Visual Studio Code y Markdown para desarrollo, control de versiones y documentación, además de experiencia básica con Microsoft Azure.",
+
+skillsCreativeTitle: "Herramientas Creativas y Multimedia",
+skillsCreativeText: "Experiencia con Cubase y Guitar Pro para producción musical, MIDI, notación y arreglos, además de NCH y VideoPad para edición básica de video y contenido multimedia.",
+
+projectsTitle: "Proyectos",
+
+projectEvTitle: "EV Charging Optimizer",
+projectEvText: "Desarrollé una herramienta práctica para apoyar decisiones sobre la carga de vehículos eléctricos utilizando precios spot de electricidad, costes de distribución, producción solar y demanda de carga. El proyecto evolucionó de un modelo en Excel a una aplicación desarrollada con Python y Streamlit.",
+
+projectDbTitle: "Base de Datos Music Gigs",
+projectDbText: "Desarrollé junto con un compañero de clase una base de datos relacional para una aplicación de conciertos y aficionados a la música como parte de un proyecto de curso. El proyecto incluyó tablas relacionadas para artistas, lugares, conciertos, canciones, setlists, productos y pedidos, además de consultas SQL para recuperar y analizar datos.",
+
+projectWebTitle: "Proyectos de Desarrollo Web",
+projectWebText: "Diseñé y desarrollé sitios web responsivos utilizando HTML, CSS, Bootstrap y JavaScript, incluyendo funcionalidad multilingüe, diseños adaptables, control de versiones con Git y publicación mediante GitHub Pages.",
+
+projectGithubBtn: "Ver en GitHub",
+projectAcademicStatus: "Proyecto académico colaborativo",
 
 testimonialsTitle: "Testimonios",
 testimonialsBadge: "Comentarios",
@@ -974,13 +1239,15 @@ contactEmailSchool: "Correo académico (Laurea UAS)",
 contactEmailPersonal: "Correo personal",
 footerTagline: "Sitio web de portafolio creado con fines académicos y profesionales. Imágenes de fondo cortesía de Unsplash, Pexels, Pixabay y contenido generado por IA.",
 
-  aboutBtnPrimary: "Solicitar presupuesto",
+  aboutBtnPrimary: "Ver proyectos",
   aboutBtnSecondary: "Contáctame",
   navBrand: "Israel G.",
 navHome: "Inicio",
 navAbout: "Sobre mí",
+navCourses: "Cursos",
 navSkills: "Habilidades",
-navHobbies: "Intereses",
+navProjects: "Proyectos",
+navHobbies: "Aficiones",
 navContact: "Contacto",
 }
 
